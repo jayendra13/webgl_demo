@@ -1,0 +1,149 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 29.08.2016 17:36:23
+
+newmtl wire_153228214
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.6000 0.8941 0.8392
+	Kd 0.6000 0.8941 0.8392
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Material__694
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\Arch41_037_leaf.jpg
+	map_Kd maps\Arch41_037_leaf.jpg
+
+newmtl Material__696
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\Arch41_031_ground.jpg
+	map_Kd maps\Arch41_031_ground.jpg
+
+newmtl Material__700
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\Arch41_001_wood.jpg
+	map_Kd maps\Arch41_001_wood.jpg
+
+newmtl Material__695
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\Arch41_037_ground.jpg
+	map_Kd maps\Arch41_037_ground.jpg
+
+newmtl wire_188188188
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.7373 0.7373 0.7373
+	Kd 0.7373 0.7373 0.7373
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_000000000
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0000 0.0000 0.0000
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_086086086
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.3373 0.3373 0.3373
+	Kd 0.3373 0.3373 0.3373
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Metal_Chrome_2
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.4392 0.4392 0.4392
+	Ks 1.3500 1.3500 1.3500
+	Ke 0.0000 0.0000 0.0000
+	map_refl maps\Lakerem.jpg
+
+newmtl Material__658
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\i-love-you-picture.jpg
+	map_Kd maps\i-love-you-picture.jpg
+
+newmtl Material__42
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\Archmodels_112_056_wood_diffuse.jpg
+	map_Kd maps\Archmodels_112_056_wood_diffuse.jpg
+
+newmtl wire_228184153
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.8941 0.7216 0.6000
+	Kd 0.8941 0.7216 0.6000
+	Ks 0.3500 0.3500 0.3500

@@ -32,7 +32,7 @@ function initMesh() {
 	var loader = new THREE.ColladaLoader();
 	loader.options.convertUpAxis = true;
 	
-	loader.load('./data/dining_area.dae', function(collada) {
+	loader.load('./data/3d_view.dae', function(collada) {
 		mesh = collada.scene;
 		var skin = collada.skins[0];
 

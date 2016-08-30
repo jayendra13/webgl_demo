@@ -1,7 +1,7 @@
 var scene, camera, renderer;
 var cube, mesh;
 var collada;
-var spotLight,light;
+var spotLight,light, hemiLight;
 
 var WIDTH = window.innerWidth;
 var HEIGHT = window.innerHeight;
@@ -47,15 +47,15 @@ function initMesh() {
 }
 
 function initLights() {
-	light = new THREE.AmbientLight(0xffffff);
+	//light = new THREE.AmbientLight(0xffffff);
 	
 	spotLight = new THREE.SpotLight(0xffffff);
-	spotLight.position.set(3, 3, 3);
+	spotLight.position.set(50, 100, 400);
 	spotLight.castShadow = true;
 	scene.add(spotLight);
 
 	/*var directionalLight = new THREE.DirectionalLight(pointColor);
-	directionalLight.position.set(-40, 60, -10);
+	directionalLight.position.set(50, 50, 50);
 	directionalLight.castShadow = true;
 	directionalLight.shadowCameraNear = 2;
 	directionalLight.shadowCameraFar = 200;
@@ -69,7 +69,12 @@ function initLights() {
     directionalLight.shadowMapWidth = 1024;
     scene.add(directionalLight);*/
 
-	scene.add(light);
+
+	/*hemiLight = new THREE.HemisphereLight(0x0000ff, 0x00ff00, 0.6);
+	hemiLight.position.set(0, 500, 0);
+	scene.add(hemiLight);*/
+
+	//scene.add(light);
 }
 
 function initRenderer() {

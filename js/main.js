@@ -1,5 +1,6 @@
 var scene, camera, renderer;
 var cube, mesh;
+var collada;
 
 var WIDTH = window.innerWidth;
 var HEIGHT = window.innerHeight;
@@ -8,14 +9,12 @@ var SPEED = 0.01;
 function init() {
 	scene = new THREE.Scene();
 
-	//initCube();
 	initMesh();
 	initCamera();
 	initRenderer()
 	initLights();
 
 	controls = new THREE.OrbitControls( camera);
-	//controls.addEventListener( 'change', render );
 
 	document.body.appendChild(renderer.domElement);
 }
@@ -28,58 +27,34 @@ function initCamera() {
 	scene.add(camera);
 }
 
-function initCube() {
-
-	var geometry = new THREE.BoxGeometry(1, 1, 1);
-	//var material = new THREE.MeshBasicMaterial({color: 0x00ff00});
-	var material = new THREE.MeshNormalMaterial();
-	cube = new THREE.Mesh(geometry, material);
-
-	scene.add(cube);
-}
-
 function initMesh() {
-	/*var loader = new THREE.JSONLoader();
-	loader.load('./js/room.json', function(geometry) {
-		var mesh = new THREE.Mesh(geometry);
-		scene.add(mesh);
-	});*/
 
 	var loader = new THREE.ColladaLoader();
 	loader.options.convertUpAxis = true;
 	
 	loader.load('./data/room.dae', function(collada) {
-		var dae = collada.scene;
+		mesh = collada.scene;
 		var skin = collada.skins[0];
 
-		dae.position.set(0,0,0);
+		mesh.position.set(0,0,0);
 
-		scene.add(dae);
+
+		console.log(collada);
+		console.log("\n");
+		mesh.traverse( function(child) {
+			console.log(child);
+			if (child instanceof THREE.Mesh) {
+				//child.material = material;
+				//scene.add(child);
+			}
+		});
+		scene.add(mesh);
 	});
 }
 
 function initLights() {
 	var light = new THREE.AmbientLight(0xffffff);
 	scene.add(light);
-}
-function rotateMesh() {
-
-	if (!mesh) {
-		return;
-	}
-
-	mesh.rotation.x += SPEED *2;
-	mesh.rotation.z += SPEED*3;
-	mesh.rotation.y += SPEED;
-}
-
-function rotateCube() {
-	if (!cube) {
-		return;
-	}
-	cube.rotation.x += SPEED *2;
-	cube.rotation.y += SPEED;
-	cube.rotation.z += SPEED*3;
 }
 
 function initRenderer() {
@@ -88,10 +63,7 @@ function initRenderer() {
 }
 
 function render (argument) {
-
 	requestAnimationFrame(render);
-	//rotateCube();
-	//rotateMesh();
 	controls.update();
 	renderer.render(scene, camera);
 }
